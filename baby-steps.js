@@ -13,4 +13,5 @@ var sum = arr.reduce(function(acc, curr) {
 //acc and curr - represents accumulator and current value.
 //During each iteration the current value(curr) is added to the accumulator(acc).
 //As the arr(array values) are in string it is required to be converted into numbers using Number() or simply adding '+' as prefix to the variable (+acc , +curr).
+
 console.log(sum);
