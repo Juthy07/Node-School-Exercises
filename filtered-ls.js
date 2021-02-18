@@ -13,6 +13,8 @@ const ext = '.' + process.argv[3];
 
 
 fs.readdir(folder, function (err, files) {
+    //The fs.readdir() method is used to asynchronously read the contents of a given directory. 
+    //The callback of this method returns an array of all the file names in the directory.
     if(err)  return console.error(err);
          files.forEach(function(file) {
              if(path.extname(file)===ext) {   //The path.extname() method returns the extension of a file path.
